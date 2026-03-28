@@ -3,7 +3,7 @@
 <html class="dark" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Our Services | NeonCurator Digital Solutions</title>
+<title>Our Services | PowerPluto Technologies Digital Solutions</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
@@ -120,7 +120,7 @@
 <!-- TopNavBar -->
 <header class="fixed top-0 w-full z-50 bg-[#180429]/60 backdrop-blur-lg shadow-[0_8px_32px_0_rgba(59,0,101,0.15)]">
 <nav class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
-<div class="text-xl font-black tracking-tighter text-slate-50">NeonCurator</div>
+<div class="text-xl font-black tracking-tighter text-slate-50">PowerPluto Technologies</div>
 <div class="hidden md:flex items-center gap-10">
 <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all duration-300" href="#">Home</a>
 <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-violet-400 border-b-2 border-violet-500 pb-1" href="#">Services</a>
