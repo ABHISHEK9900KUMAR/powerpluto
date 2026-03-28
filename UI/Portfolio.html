@@ -96,27 +96,26 @@
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-[#180429]/80 backdrop-blur-lg shadow-[0_8px_32px_0_rgba(59,0,101,0.15)]">
 <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
-  <!-- Logo -->
-  <a href="Homepage.html" class="text-xl font-black tracking-tighter text-slate-50 hover:text-violet-300 transition-colors">PowerPluto Technologies</a>
-  <!-- Desktop nav -->
+  <!-- Left: Hamburger (mobile only) + Logo -->
+  <div class="flex items-center gap-3">
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-white/5 border border-white/10 gap-1.5" onclick="toggleMenu()">
+      <span class="block w-5 h-0.5 bg-slate-300 transition-all duration-300" id="bar1"></span>
+      <span class="block w-5 h-0.5 bg-slate-300 transition-all duration-300" id="bar2"></span>
+      <span class="block w-5 h-0.5 bg-slate-300 transition-all duration-300" id="bar3"></span>
+    </button>
+    <a href="Homepage.html" class="text-xl font-black tracking-tighter text-slate-50 hover:text-violet-300 transition-colors">PowerPluto Technologies</a>
+  </div>
+  <!-- Center: Desktop nav -->
   <div class="hidden md:flex items-center space-x-10">
     <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Homepage.html">Home</a>
     <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Services.html">Services</a>
     <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-violet-400 border-b-2 border-violet-500 pb-1" href="Portfolio.html">Portfolio</a>
     <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="About.html">About</a>
   </div>
-  <!-- Right: CTA + Hamburger -->
-  <div class="flex items-center gap-3">
-    <a href="contact.html" class="hidden md:block"><button class="bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold px-5 py-2.5 rounded-full text-sm hover:scale-105 transition-transform shadow-lg shadow-violet-900/30">Get a Quote</button></a>
-    <!-- Hamburger -->
-    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-white/5 border border-white/10 gap-1.5" onclick="toggleMenu()">
-      <span class="block w-5 h-0.5 bg-slate-300 transition-all" id="bar1"></span>
-      <span class="block w-5 h-0.5 bg-slate-300 transition-all" id="bar2"></span>
-      <span class="block w-5 h-0.5 bg-slate-300 transition-all" id="bar3"></span>
-    </button>
-  </div>
+  <!-- Right: CTA (desktop only) -->
+  <a href="contact.html" class="hidden md:block"><button class="bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold px-5 py-2.5 rounded-full text-sm hover:scale-105 transition-transform shadow-lg shadow-violet-900/30">Get a Quote</button></a>
 </div>
-<!-- Mobile menu -->
+<!-- Mobile menu dropdown -->
 <div id="mobileMenu" class="hidden md:hidden bg-[#180429]/95 backdrop-blur-xl border-t border-white/5 px-6 py-6 flex flex-col gap-4">
   <a href="Homepage.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Home</a>
   <a href="Services.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Services</a>
@@ -133,7 +132,7 @@
     const open = !menu.classList.contains('hidden');
     menu.classList.toggle('hidden');
     b1.style.transform = open ? '' : 'translateY(8px) rotate(45deg)';
-    b2.style.opacity   = open ? '' : '0';
+    b2.style.opacity   = open ? '1' : '0';
     b3.style.transform = open ? '' : 'translateY(-8px) rotate(-45deg)';
   }
 </script>
