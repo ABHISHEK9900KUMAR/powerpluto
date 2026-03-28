@@ -93,17 +93,49 @@
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary/30">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-[#34184c]/60 backdrop-blur-xl shadow-[inset_1px_1px_2px_rgba(189,157,255,0.1)]">
-<div class="flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto">
-<div class="text-xl font-extrabold tracking-tighter text-[#f3deff] font-headline">PowerPluto Technologies</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="Services.html">Solutions</a>
-<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="Portfolio.html">Work</a>
-<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="About.html">About</a>
-<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="#">Insights/a>
+<nav class="fixed top-0 w-full z-50 bg-[#180429]/80 backdrop-blur-lg shadow-[0_8px_32px_0_rgba(59,0,101,0.15)]">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+  <!-- Logo -->
+  <a href="Homepage.html" class="text-xl font-black tracking-tighter text-slate-50 hover:text-violet-300 transition-colors">PowerPluto Technologies</a>
+  <!-- Desktop nav -->
+  <div class="hidden md:flex items-center space-x-10">
+    <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Homepage.html">Home</a>
+    <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Services.html">Services</a>
+    <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Portfolio.html">Portfolio</a>
+    <a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="About.html">About</a>
+  </div>
+  <!-- Right: CTA + Hamburger -->
+  <div class="flex items-center gap-3">
+    <a href="contact.html" class="hidden md:block"><button class="bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold px-5 py-2.5 rounded-full text-sm hover:scale-105 transition-transform shadow-lg shadow-violet-900/30">Get a Quote</button></a>
+    <!-- Hamburger -->
+    <button id="menuBtn" class="md:hidden flex flex-col justify-center items-center w-10 h-10 rounded-xl bg-white/5 border border-white/10 gap-1.5" onclick="toggleMenu()">
+      <span class="block w-5 h-0.5 bg-slate-300 transition-all" id="bar1"></span>
+      <span class="block w-5 h-0.5 bg-slate-300 transition-all" id="bar2"></span>
+      <span class="block w-5 h-0.5 bg-slate-300 transition-all" id="bar3"></span>
+    </button>
+  </div>
 </div>
-<a href="contact.html"><button class="bg-gradient-to-br from-primary to-primary-dim px-6 py-2.5 rounded-full text-on-primary-fixed font-bold text-sm hover:scale-105 transition-transform active:scale-95">Get a Quote</button></a>
+<!-- Mobile menu -->
+<div id="mobileMenu" class="hidden md:hidden bg-[#180429]/95 backdrop-blur-xl border-t border-white/5 px-6 py-6 flex flex-col gap-4">
+  <a href="Homepage.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Home</a>
+  <a href="Services.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Services</a>
+  <a href="Portfolio.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Portfolio</a>
+  <a href="About.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">About</a>
+  <a href="contact.html"><button class="w-full bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold py-3 rounded-xl text-sm mt-2">Get a Quote</button></a>
 </div>
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById('mobileMenu');
+    const b1 = document.getElementById('bar1');
+    const b2 = document.getElementById('bar2');
+    const b3 = document.getElementById('bar3');
+    const open = !menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    b1.style.transform = open ? '' : 'translateY(8px) rotate(45deg)';
+    b2.style.opacity   = open ? '' : '0';
+    b3.style.transform = open ? '' : 'translateY(-8px) rotate(-45deg)';
+  }
+</script>
 </nav>
 <main class="pt-32 pb-24 px-6 md:px-12 max-w-[1440px] mx-auto">
 <div class="flex flex-col lg:flex-row gap-12 items-stretch min-h-[700px]">
