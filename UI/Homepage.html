@@ -117,7 +117,7 @@
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-white overflow-x-hidden">
 <!-- Floating WhatsApp Button -->
-<a class="fixed bottom-8 right-8 z-[60] bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(189,157,255,0.4)] hover:scale-110 transition-transform active:scale-95 group" href="#">
+<a id="chatBtn" class="fixed bottom-8 right-8 z-[60] bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(189,157,255,0.4)] hover:scale-110 transition-transform active:scale-95 group" href="#">
 <span class="material-symbols-outlined text-3xl">chat</span>
 <span class="absolute right-full mr-4 bg-surface-container-high px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-primary/20">Chat with us</span>
 </a>
@@ -546,4 +546,5 @@
         observer.observe(el);
     });
 </script>
+<script src="chatbot.js"></script>
 </body></html>
