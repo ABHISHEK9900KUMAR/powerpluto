@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About | PowerPluto Technologies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-tertiary": "#6a0a31",
+                "on-primary-fixed": "#000000",
+                "inverse-surface": "#fff7fe",
+                "secondary": "#c38bf5",
+                "on-primary-container": "#2e006c",
+                "on-error": "#490013",
+                "on-error-container": "#ffb2b9",
+                "outline-variant": "#543f66",
+                "tertiary": "#ff97b2",
+                "on-surface": "#f3deff",
+                "tertiary-fixed": "#ff8eac",
+                "on-background": "#f3deff",
+                "error": "#ff6e84",
+                "surface-container-low": "#1e0831",
+                "on-secondary-fixed": "#4d137b",
+                "surface-tint": "#bd9dff",
+                "surface-bright": "#3c1d56",
+                "surface-container-lowest": "#000000",
+                "on-primary-fixed-variant": "#390083",
+                "tertiary-dim": "#f17799",
+                "surface-container-high": "#2c1343",
+                "surface": "#180429",
+                "outline": "#846c96",
+                "secondary-fixed": "#e6c5ff",
+                "surface-container": "#250d3a",
+                "background": "#180429",
+                "on-secondary-container": "#e5c4ff",
+                "primary": "#bd9dff",
+                "error-container": "#a70138",
+                "on-secondary": "#3b0065",
+                "tertiary-container": "#fe81a4",
+                "surface-variant": "#34184c",
+                "inverse-on-surface": "#624c74",
+                "primary-container": "#b28cff",
+                "secondary-container": "#612b8f",
+                "secondary-dim": "#be86ef",
+                "primary-dim": "#8a4cfc",
+                "inverse-primary": "#742fe5",
+                "secondary-fixed-dim": "#ddb3ff",
+                "on-secondary-fixed-variant": "#6b369a",
+                "on-tertiary-fixed-variant": "#711036",
+                "on-tertiary-container": "#5a0027",
+                "tertiary-fixed-dim": "#f77c9e",
+                "surface-dim": "#180429",
+                "primary-fixed-dim": "#a67aff",
+                "primary-fixed": "#b28cff",
+                "surface-container-highest": "#34184c",
+                "on-tertiary-fixed": "#380016",
+                "on-surface-variant": "#bba1cf",
+                "on-primary": "#3c0089",
+                "error-dim": "#d73357"
+              },
+              fontFamily: {
+                "headline": ["Manrope"],
+                "body": ["Inter"],
+                "label": ["Inter"]
+              },
+              borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .neon-gradient {
+            background: linear-gradient(135deg, #bd9dff 0%, #8a4cfc 100%);
+        }
+        .glass-panel {
+            background: rgba(60, 29, 86, 0.6);
+            backdrop-filter: blur(20px);
+        }
+        .ambient-glow {
+            box-shadow: 0px 8px 48px rgba(59, 0, 101, 0.35);
+        }
+        .inner-glow {
+            box-shadow: inset 1px 1px 2px rgba(178, 140, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body overflow-x-hidden">
+<!-- TopAppBar Navigation -->
+<header class="fixed top-0 w-full z-50 bg-[#180429]/60 backdrop-blur-md border-b border-violet-500/10 shadow-[0_8px_32px_rgba(59,0,101,0.15)]">
+<nav class="flex justify-between items-center w-full px-8 py-6 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-violet-100 uppercase font-headline">PowerPluto Technologies</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-400 font-medium hover:text-violet-200 transition-colors duration-300" href="Services.html">Solutions</a>
+<a class="text-violet-400 font-bold border-b-2 border-violet-500 pb-1 hover:text-violet-200 transition-colors duration-300" href="About.html">About</a>
+<a class="text-slate-400 font-medium hover:text-violet-200 transition-colors duration-300" href="#">Process</a>
+<a class="text-slate-400 font-medium hover:text-violet-200 transition-colors duration-300" href="Portfolio.html">Work</a>
+<a class="text-slate-400 font-medium hover:text-violet-200 transition-colors duration-300" href="contact.html">Contact</a>
+</div>
+<a href="contact.html"><button class="neon-gradient text-on-primary-fixed font-bold px-6 py-2.5 rounded-full scale-95 active:scale-90 transition-transform text-sm">Start a Project</button></a>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center pt-24 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 blur-[120px] rounded-full"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 text-center">
+<span class="inline-block label-md text-primary font-bold tracking-widest uppercase mb-6 bg-primary/10 px-4 py-1 rounded-full">Precision Digital Agency</span>
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tighter text-on-surface mb-8 leading-[1.1]">
+                    About <span class="text-transparent bg-clip-text neon-gradient">PowerPluto Technologies</span>
+</h1>
+<p class="text-2xl md:text-3xl text-on-surface-variant max-w-3xl mx-auto font-light leading-relaxed">
+                    Architecting the Future of Digital Experience.
+                </p>
+</div>
+</section>
+<!-- Company Story Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 flex flex-col lg:flex-row items-center gap-24">
+<div class="w-full lg:w-1/2 relative group">
+<div class="absolute -top-8 -left-8 w-64 h-64 bg-primary-dim/20 blur-3xl group-hover:bg-primary-dim/30 transition-all"></div>
+<div class="relative rounded-2xl overflow-hidden inner-glow ambient-glow aspect-[4/5]">
+<img alt="Founder" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up portrait of a visionary digital architect in a high-tech studio setting with soft purple ambient lighting and bokeh background" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=600&q=80&fit=crop&crop=face"/>
+</div>
+<div class="absolute bottom-6 left-6 right-6 glass-panel p-6 rounded-xl border border-outline-variant/20">
+<p class="font-headline font-bold text-lg text-primary">Founder &amp; Chief Architect</p>
+<p class="text-sm text-on-surface-variant">Leading the intersection of design and logic.</p>
+</div>
+</div>
+<div class="w-full lg:w-1/2 space-y-10">
+<div>
+<span class="text-primary label-md font-bold tracking-widest uppercase block mb-4">Our Narrative</span>
+<h2 class="font-headline text-4xl md:text-5xl font-bold text-on-surface leading-tight">Beyond Digital Transformation.</h2>
+</div>
+<p class="text-lg text-on-surface-variant leading-relaxed">
+                        Born from the necessity for precision in an era of rapid digital saturation, PowerPluto Technologies was founded to act as a bridge between abstract vision and technical reality. We don't just build websites; we engineer digital ecosystems that pulse with life.
+                    </p>
+<div class="grid grid-cols-2 gap-8 pt-6">
+<div class="space-y-2">
+<span class="text-3xl font-headline font-black text-primary">150+</span>
+<p class="text-sm text-on-surface-variant font-medium">Digital Solutions Launched</p>
+</div>
+<div class="space-y-2">
+<span class="text-3xl font-headline font-black text-primary">99.9%</span>
+<p class="text-sm text-on-surface-variant font-medium">Precision Engineering Rate</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Process: Visual Timeline Grid -->
+<section class="py-32 bg-surface relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="text-center mb-24">
+<span class="text-primary label-md font-bold tracking-widest uppercase block mb-4">The Methodology</span>
+<h2 class="font-headline text-5xl font-bold">Six Steps to Excellence</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Step 1 -->
+<div class="group p-10 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/10 hover:border-primary/30 inner-glow">
+<div class="w-14 h-14 rounded-xl neon-gradient flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(189,157,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="search">search</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">01. Discovery</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Deep-dive analysis of your business landscape, target audience, and core objectives to establish a technical North Star.</p>
+</div>
+<!-- Step 2 -->
+<div class="group p-10 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/10 hover:border-primary/30 inner-glow">
+<div class="w-14 h-14 rounded-xl neon-gradient flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(189,157,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="architecture">architecture</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">02. Design</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Crafting high-fidelity prototypes and visual systems that prioritize user psychology and aesthetic dominance.</p>
+</div>
+<!-- Step 3 -->
+<div class="group p-10 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/10 hover:border-primary/30 inner-glow">
+<div class="w-14 h-14 rounded-xl neon-gradient flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(189,157,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="code">code</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">03. Development</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Clean, scalable engineering using modern frameworks. We write code that performs under pressure.</p>
+</div>
+<!-- Step 4 -->
+<div class="group p-10 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/10 hover:border-primary/30 inner-glow">
+<div class="w-14 h-14 rounded-xl neon-gradient flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(189,157,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="bug_report">bug_report</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">04. Testing</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Rigorous QA, stress-testing, and security audits to ensure your platform is unbreakable before launch.</p>
+</div>
+<!-- Step 5 -->
+<div class="group p-10 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/10 hover:border-primary/30 inner-glow">
+<div class="w-14 h-14 rounded-xl neon-gradient flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(189,157,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="rocket_launch">rocket_launch</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">05. Launch</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Seamless deployment to production environments with real-time monitoring and optimization.</p>
+</div>
+<!-- Step 6 -->
+<div class="group p-10 rounded-2xl bg-surface-container-low hover:bg-surface-container-high transition-all duration-500 border border-outline-variant/10 hover:border-primary/30 inner-glow">
+<div class="w-14 h-14 rounded-xl neon-gradient flex items-center justify-center mb-8 shadow-[0_0_20px_rgba(189,157,255,0.4)]">
+<span class="material-symbols-outlined text-on-primary-fixed" data-icon="support_agent">support_agent</span>
+</div>
+<h3 class="font-headline text-xl font-bold mb-4">06. Support</h3>
+<p class="text-on-surface-variant text-sm leading-relaxed">Ongoing evolution and maintenance. We stay connected to ensure your platform grows with your brand.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Team Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-20 flex flex-col md:flex-row justify-between items-end gap-6">
+<div class="max-w-xl">
+<span class="text-primary label-md font-bold tracking-widest uppercase block mb-4">The Architects</span>
+<h2 class="font-headline text-5xl font-bold">Experts in Digital Precision</h2>
+</div>
+<button class="px-8 py-3 rounded-full border border-primary/40 text-primary font-bold hover:bg-primary/10 transition-colors">Join the Collective</button>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+<!-- Member 1 -->
+<div class="relative group">
+<div class="aspect-square rounded-2xl overflow-hidden mb-6 bg-surface-container-high inner-glow">
+<img alt="Lead Architect" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 grayscale hover:grayscale-0" data-alt="Professional woman portrait with short hair in a minimalist modern workspace, sharp lighting, high-tech professional aesthetic" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&q=80&fit=crop&crop=face"/>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface">Elena Vance</h4>
+<p class="text-primary font-medium">Lead Digital Architect</p>
+</div>
+<!-- Member 2 -->
+<div class="relative group">
+<div class="aspect-square rounded-2xl overflow-hidden mb-6 bg-surface-container-high inner-glow">
+<img alt="Senior Developer" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 grayscale hover:grayscale-0" data-alt="Man with beard looking thoughtfully away, soft cinematic lighting, industrial tech office background" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&q=80&fit=crop&crop=face"/>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface">Julian Thorne</h4>
+<p class="text-primary font-medium">Senior Systems Engineer</p>
+</div>
+<!-- Member 3 -->
+<div class="relative group">
+<div class="aspect-square rounded-2xl overflow-hidden mb-6 bg-surface-container-high inner-glow">
+<img alt="UX Strategist" class="w-full h-full object-cover scale-110 group-hover:scale-100 transition-transform duration-700 grayscale hover:grayscale-0" data-alt="Smiling woman portrait with diverse background, bright high-key lighting, modern and energetic tech vibe" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80&fit=crop&crop=face"/>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface">Sasha Kross</h4>
+<p class="text-primary font-medium">UX Experience Strategist</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Tech Stack Section -->
+<section class="py-32 bg-surface overflow-hidden">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-16">
+<span class="text-primary label-md font-bold tracking-widest uppercase block mb-4">Our Arsenal</span>
+<h2 class="font-headline text-4xl font-bold">Cutting-Edge Technologies</h2>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-60">
+<div class="group flex flex-col items-center gap-4 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="material-symbols-outlined text-5xl" data-icon="rocket">rocket</span>
+<span class="text-xs font-bold uppercase tracking-widest">Next.js</span>
+</div>
+<div class="group flex flex-col items-center gap-4 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="material-symbols-outlined text-5xl" data-icon="terminal">terminal</span>
+<span class="text-xs font-bold uppercase tracking-widest">React</span>
+</div>
+<div class="group flex flex-col items-center gap-4 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="material-symbols-outlined text-5xl" data-icon="cloud">cloud</span>
+<span class="text-xs font-bold uppercase tracking-widest">AWS</span>
+</div>
+<div class="group flex flex-col items-center gap-4 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="material-symbols-outlined text-5xl" data-icon="phone_iphone">phone_iphone</span>
+<span class="text-xs font-bold uppercase tracking-widest">Flutter</span>
+</div>
+<div class="group flex flex-col items-center gap-4 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="material-symbols-outlined text-5xl" data-icon="palette">palette</span>
+<span class="text-xs font-bold uppercase tracking-widest">Tailwind</span>
+</div>
+<div class="group flex flex-col items-center gap-4 grayscale hover:grayscale-0 hover:opacity-100 transition-all cursor-default">
+<span class="material-symbols-outlined text-5xl" data-icon="database">database</span>
+<span class="text-xs font-bold uppercase tracking-widest">PostgreSQL</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-32 bg-surface-container-highest/30 relative">
+<div class="max-w-5xl mx-auto px-8 py-20 rounded-3xl neon-gradient text-on-primary-fixed text-center relative overflow-hidden">
+<div class="absolute inset-0 bg-black/10"></div>
+<div class="relative z-10">
+<h2 class="font-headline text-4xl md:text-5xl font-black mb-8">Ready to Curate Your Next Digital Era?</h2>
+<p class="text-xl mb-12 opacity-90 max-w-2xl mx-auto font-medium">Let's build something that doesn't just work, but dominates the market.</p>
+<button class="bg-surface text-on-surface px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-bright transition-all shadow-xl">
+                        Initialize Project
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-20 mt-auto bg-[#180429] border-t border-violet-900/20">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="flex flex-col items-center md:items-start gap-4">
+<div class="text-lg font-bold text-violet-400 font-headline">PowerPluto Technologies</div>
+<p class="font-inter text-sm tracking-wide text-slate-500">© 2024 PowerPluto Technologies. Precision in Motion.</p>
+</div>
+<div class="flex gap-8">
+<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
+<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="#">Careers</a>
+<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="contact.html">Contact</a>
+</div>
+</div>
+</footer>
+</body></html>

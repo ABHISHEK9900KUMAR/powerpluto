@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>PowerPluto Technologies | Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "background": "#180429",
+              "surface-container-highest": "#34184c",
+              "surface-tint": "#bd9dff",
+              "on-secondary-fixed-variant": "#6b369a",
+              "on-tertiary-fixed-variant": "#711036",
+              "on-primary-fixed-variant": "#390083",
+              "secondary-container": "#612b8f",
+              "inverse-on-surface": "#624c74",
+              "surface-dim": "#180429",
+              "outline-variant": "#543f66",
+              "tertiary-fixed-dim": "#f77c9e",
+              "surface-variant": "#34184c",
+              "on-background": "#f3deff",
+              "surface-container-low": "#1e0831",
+              "primary-fixed-dim": "#a67aff",
+              "secondary": "#c38bf5",
+              "on-surface-variant": "#bba1cf",
+              "primary-fixed": "#b28cff",
+              "on-secondary-container": "#e5c4ff",
+              "primary-dim": "#8a4cfc",
+              "primary": "#bd9dff",
+              "error": "#ff6e84",
+              "on-surface": "#f3deff",
+              "on-error": "#490013",
+              "secondary-fixed-dim": "#ddb3ff",
+              "surface-container-high": "#2c1343",
+              "inverse-surface": "#fff7fe",
+              "tertiary": "#ff97b2",
+              "on-error-container": "#ffb2b9",
+              "on-tertiary-fixed": "#380016",
+              "tertiary-container": "#fe81a4",
+              "outline": "#846c96",
+              "surface-container": "#250d3a",
+              "tertiary-dim": "#f17799",
+              "surface-container-lowest": "#000000",
+              "tertiary-fixed": "#ff8eac",
+              "on-tertiary": "#6a0a31",
+              "on-primary": "#3c0089",
+              "surface-bright": "#3c1d56",
+              "on-tertiary-container": "#5a0027",
+              "error-container": "#a70138",
+              "secondary-dim": "#be86ef",
+              "primary-container": "#b28cff",
+              "on-secondary-fixed": "#4d137b",
+              "surface": "#180429",
+              "on-primary-container": "#2e006c",
+              "on-secondary": "#3b0065",
+              "error-dim": "#d73357",
+              "secondary-fixed": "#e6c5ff",
+              "inverse-primary": "#742fe5",
+              "on-primary-fixed": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-card {
+            background: linear-gradient(135deg, rgba(52, 24, 76, 0.4) 0%, rgba(30, 8, 49, 0.4) 100%);
+            backdrop-filter: blur(20px);
+            box-shadow: inset 1px 1px 2px rgba(178, 140, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #bd9dff 0%, #8a4cfc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#34184c]/60 backdrop-blur-xl shadow-[0px_0px_20px_rgba(189,157,255,0.1)]">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1440px] mx-auto">
+<div class="text-2xl font-black text-[#f3deff] tracking-tighter font-headline">PowerPluto Technologies</div>
+<div class="hidden md:flex items-center space-x-8 font-headline font-bold tracking-tight">
+<a class="text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="Services.html">Solutions</a>
+<a class="text-[#bd9dff] border-b-2 border-[#bd9dff] pb-1" href="Portfolio.html">Work</a>
+<a class="text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="About.html">About</a>
+<a class="text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="contact.html">Contact</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-dim text-on-primary-fixed font-bold py-2 px-6 rounded-full active:scale-95 transition-transform hover:shadow-[0_0_15px_rgba(189,157,255,0.4)]">
+                Get Started
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-[1440px] mx-auto">
+<!-- Header Section -->
+<header class="mb-16 md:ml-[8.5rem]">
+<span class="text-primary font-label text-sm font-semibold tracking-widest uppercase mb-4 block">Portfolio</span>
+<h1 class="font-headline text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 text-on-surface">
+                Our <span class="text-gradient">Work</span>
+</h1>
+<p class="font-body text-xl text-on-surface-variant max-w-2xl leading-relaxed">
+                We craft scalable digital ecosystems that blend high-performance engineering with editorial-grade aesthetics. Explore our latest deployments.
+            </p>
+</header>
+<!-- Filter Tabs -->
+<div class="flex flex-wrap gap-3 mb-16 md:ml-[8.5rem]">
+<button class="px-6 py-2 rounded-md bg-secondary-container text-on-secondary-container font-label text-sm font-medium transition-all hover:bg-primary hover:text-on-primary">All</button>
+<button class="px-6 py-2 rounded-md bg-surface-container text-on-surface-variant font-label text-sm font-medium transition-all hover:bg-primary hover:text-on-primary">Websites</button>
+<button class="px-6 py-2 rounded-md bg-surface-container text-on-surface-variant font-label text-sm font-medium transition-all hover:bg-primary hover:text-on-primary">Mobile Apps</button>
+<button class="px-6 py-2 rounded-md bg-surface-container text-on-surface-variant font-label text-sm font-medium transition-all hover:bg-primary hover:text-on-primary">Web Apps</button>
+<button class="px-6 py-2 rounded-md bg-surface-container text-on-surface-variant font-label text-sm font-medium transition-all hover:bg-primary hover:text-on-primary">POS</button>
+</div>
+<!-- Project Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group relative glass-card rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="futuristic dashboard interface on a laptop screen with violet glowing elements and complex data visualizations in a dark studio" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&fit=crop"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-bold font-label px-3 py-1 rounded-full bg-surface-bright text-primary uppercase tracking-tighter">Web App</span>
+<h3 class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Aether Dynamics</h3>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-3">Nebula Analytics</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        Real-time data processing engine for deep-space telemetry visualization and predictive modeling.
+                    </p>
+</div>
+<!-- Hover Overlay -->
+<div class="absolute inset-0 bg-primary-dim/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-on-surface text-background font-headline font-bold py-3 px-8 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details
+                    </button>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative glass-card rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Project 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="sleek mobile phone mockup showing a luxury lifestyle app with minimalist typography and high-fashion editorial imagery" src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=800&q=80&fit=crop"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-bold font-label px-3 py-1 rounded-full bg-surface-bright text-primary uppercase tracking-tighter">Mobile App</span>
+<h3 class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Vantage Luxe</h3>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-3">Velvet Concierge</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        An ultra-exclusive mobile experience for high-net-worth individuals to manage global logistics.
+                    </p>
+</div>
+<div class="absolute inset-0 bg-primary-dim/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-on-surface text-background font-headline font-bold py-3 px-8 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details
+                    </button>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group relative glass-card rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="ultra modern e-commerce website layout with sharp grids high contrast black and violet colors and futuristic typography" src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=800&q=80&fit=crop"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-bold font-label px-3 py-1 rounded-full bg-surface-bright text-primary uppercase tracking-tighter">Website</span>
+<h3 class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Flux Core</h3>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-3">Prism Marketplace</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        Next-gen digital asset marketplace featuring sub-millisecond transaction speeds and dynamic pricing.
+                    </p>
+</div>
+<div class="absolute inset-0 bg-primary-dim/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-on-surface text-background font-headline font-bold py-3 px-8 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details
+                    </button>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group relative glass-card rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Project 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="industrial pos system terminal in a high-end restaurant with glowing purple neon lighting and sleek touchscreen design" src="https://images.unsplash.com/photo-1556742205-e10c9486e506?w=800&q=80&fit=crop"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-bold font-label px-3 py-1 rounded-full bg-surface-bright text-primary uppercase tracking-tighter">POS</span>
+<h3 class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Helix Retail</h3>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-3">Orbit Point</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        Revolutionary point-of-sale system integrated with biometric identification for seamless hospitality workflows.
+                    </p>
+</div>
+<div class="absolute inset-0 bg-primary-dim/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-on-surface text-background font-headline font-bold py-3 px-8 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details
+                    </button>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="group relative glass-card rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Project 5" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="abstract flowing 3d shapes in deep purple and chrome colors representing high-speed data architecture and digital flow" src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&fit=crop"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-bold font-label px-3 py-1 rounded-full bg-surface-bright text-primary uppercase tracking-tighter">Web App</span>
+<h3 class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Krypton Systems</h3>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-3">Titan OS</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        Cloud-based operating system designed for managing massive-scale IoT sensor networks globally.
+                    </p>
+</div>
+<div class="absolute inset-0 bg-primary-dim/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-on-surface text-background font-headline font-bold py-3 px-8 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details
+                    </button>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="group relative glass-card rounded-xl overflow-hidden transition-all duration-500 hover:translate-y-[-8px]">
+<div class="aspect-[4/3] overflow-hidden">
+<img alt="Project 6" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="close up of a digital interface with fine lines neon glowing accents and sharp typography for a technology company" src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&q=80&fit=crop"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<span class="text-xs font-bold font-label px-3 py-1 rounded-full bg-surface-bright text-primary uppercase tracking-tighter">Website</span>
+<h3 class="text-on-surface-variant font-label text-sm uppercase tracking-widest">Synapse AI</h3>
+</div>
+<h4 class="font-headline text-2xl font-bold text-on-surface mb-3">Neural Forge</h4>
+<p class="text-on-surface-variant font-body text-sm leading-relaxed mb-6">
+                        A high-converting editorial platform for an AI research lab, focusing on whitepaper accessibility.
+                    </p>
+</div>
+<div class="absolute inset-0 bg-primary-dim/20 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+<button class="bg-on-surface text-background font-headline font-bold py-3 px-8 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+                        View Details
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t border-[#543f66]/20 bg-[#000000]">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-[1440px] mx-auto">
+<div class="mb-6 md:mb-0">
+<span class="text-lg font-bold text-[#f3deff] font-headline">PowerPluto Technologies</span>
+<p class="text-[#f3deff]/40 font-body text-xs mt-2">© 2024 PowerPluto Technologies. Digital Excellence.</p>
+</div>
+<div class="flex gap-8 font-['Inter'] text-sm uppercase tracking-widest">
+<a class="text-[#f3deff]/40 hover:text-[#bd9dff] hover:translate-y-[-2px] transition-all" href="#">Privacy Policy</a>
+<a class="text-[#f3deff]/40 hover:text-[#bd9dff] hover:translate-y-[-2px] transition-all" href="#">Terms of Service</a>
+<a class="text-[#f3deff]/40 hover:text-[#bd9dff] hover:translate-y-[-2px] transition-all" href="#">Twitter</a>
+<a class="text-[#f3deff]/40 hover:text-[#bd9dff] hover:translate-y-[-2px] transition-all" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>

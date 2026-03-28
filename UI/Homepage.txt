@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "error": "#ff6e84",
+              "surface": "#0a0118",
+              "inverse-primary": "#742fe5",
+              "surface-dim": "#0a0118",
+              "outline": "#846c96",
+              "on-tertiary-fixed-variant": "#711036",
+              "on-secondary": "#3b0065",
+              "secondary-dim": "#be86ef",
+              "secondary-fixed-dim": "#ddb3ff",
+              "tertiary-dim": "#f17799",
+              "tertiary": "#ff97b2",
+              "tertiary-fixed-dim": "#f77c9e",
+              "primary-container": "#b28cff",
+              "on-primary-fixed-variant": "#390083",
+              "on-surface-variant": "#94a3b8",
+              "surface-container-low": "#110326",
+              "inverse-surface": "#fff7fe",
+              "surface-container": "#160630",
+              "surface-tint": "#bd9dff",
+              "surface-variant": "#1e0b3d",
+              "secondary": "#c38bf5",
+              "primary-fixed": "#b28cff",
+              "secondary-fixed": "#e6c5ff",
+              "surface-container-highest": "#240e45",
+              "on-tertiary": "#6a0a31",
+              "outline-variant": "#334155",
+              "on-secondary-fixed-variant": "#6b369a",
+              "primary-fixed-dim": "#a67aff",
+              "secondary-container": "#612b8f",
+              "on-primary-container": "#2e006c",
+              "error-container": "#a70138",
+              "on-primary": "#3c0089",
+              "on-surface": "#f8fafc",
+              "on-tertiary-fixed": "#380016",
+              "on-secondary-container": "#e5c4ff",
+              "on-error-container": "#ffb2b9",
+              "background": "#0a0118",
+              "error-dim": "#d73357",
+              "surface-container-lowest": "#02010a",
+              "surface-container-high": "#1c0a3b",
+              "primary": "#a855f7",
+              "inverse-on-surface": "#624c74",
+              "tertiary-container": "#fe81a4",
+              "on-error": "#490013",
+              "tertiary-fixed": "#ff8eac",
+              "on-tertiary-container": "#5a0027",
+              "primary-dim": "#8a4cfc",
+              "on-secondary-fixed": "#4d137b",
+              "on-primary-fixed": "#000000",
+              "surface-bright": "#240e45",
+              "on-background": "#f8fafc"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "3xl": "1.5rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at top center, rgba(88, 28, 135, 0.15) 0%, rgba(10, 1, 24, 0) 60%),
+                        linear-gradient(180deg, #0a0118 0%, #110326 100%);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .neon-border-hover {
+            transition: all 0.4s ease;
+            border: 1px solid rgba(168, 85, 247, 0.1);
+        }
+        .neon-border-hover:hover {
+            border-color: rgba(168, 85, 247, 0.5);
+            box-shadow: 0 0 20px rgba(168, 85, 247, 0.15);
+            transform: translateY(-4px);
+        }
+        .glass-nav {
+            background: rgba(10, 1, 24, 0.6);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30 selection:text-white overflow-x-hidden">
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-primary text-white w-14 h-14 rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(168,85,247,0.4)] hover:scale-110 transition-transform active:scale-95 group" href="#">
+<span class="material-symbols-outlined text-3xl">chat</span>
+<span class="absolute right-full mr-4 bg-surface-container-high px-3 py-1.5 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity border border-primary/20">Chat with us</span>
+</a>
+<!-- Navigation Bar (from Components v10) -->
+<nav class="fixed top-0 w-full z-50 bg-[#180429]/60 backdrop-blur-lg shadow-[0_8px_32px_0_rgba(59,0,101,0.15)]">
+<div class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+<div class="text-xl font-black tracking-tighter text-slate-50">PowerPluto Technologies</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-violet-400 border-b-2 border-violet-500 pb-1" href="#">Home</a>
+<a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all duration-300" href="#">Services</a>
+<a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all duration-300" href="#">Portfolio</a>
+<a class="font-manrope uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all duration-300" href="#">About</a>
+</div>
+<button class="bg-primary text-on-primary-fixed font-headline font-bold px-6 py-2.5 rounded-full scale-95 active:scale-90 transition-transform hover:bg-primary-dim shadow-lg shadow-primary/20 text-sm">
+            Get a Quote
+        </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative pt-48 pb-32 px-8 hero-gradient min-h-screen flex items-center">
+<!-- Ambient Blur -->
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center reveal active">
+<div class="z-10">
+<span class="inline-block text-primary font-headline font-bold text-xs tracking-[0.3em] uppercase mb-6 bg-primary/5 px-4 py-1.5 rounded-full border border-primary/10">Digital Solutions Agency</span>
+<h1 class="font-headline font-extrabold text-6xl md:text-[5.5rem] tracking-tighter leading-[0.95] mb-10 text-on-surface">
+                We Build Digital <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary via-secondary to-primary bg-[length:200%_auto] animate-gradient">Solutions</span> <br/>
+                That Scale
+            </h1>
+<p class="text-on-surface-variant text-lg md:text-xl max-w-xl mb-12 leading-relaxed font-light">
+                From bespoke websites to industrial-grade POS systems — we turn your ambitious ideas into powerful, high-performance digital products.
+            </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-white px-10 py-5 rounded-full font-headline font-bold text-lg hover:bg-primary-dim transition-all shadow-[0_0_30px_rgba(168,85,247,0.3)] hover:scale-[1.02] active:scale-95">
+                    Get a Free Quote
+                </button>
+<button class="border border-outline-variant/30 hover:bg-surface-container-highest/20 text-on-surface px-10 py-5 rounded-full font-headline font-bold text-lg transition-all backdrop-blur-sm">
+                    View Our Work
+                </button>
+</div>
+</div>
+<div class="relative z-10 hidden lg:block floating">
+<div class="relative w-full h-[600px]">
+<!-- Website Mockup -->
+<div class="absolute top-0 right-0 w-[85%] aspect-video bg-surface-container-high rounded-2xl shadow-[0_40px_100px_rgba(0,0,0,0.6)] overflow-hidden border border-outline-variant/20 group">
+<img class="w-full h-full object-cover grayscale-[0.2] group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuApx42jGM76a3DGSQucDp1d8oaRs83_WiNp6hqNlC3Nky3Eqb3b2KNigxA_ro4M_OJE0DP6_94vZz03Fr6SM9xkDT4ez7Nau49kQvuCiSaKHbY3vpAPdHyVsqUgTrJvdtTPgYZtON7iIXHZKqiVrlcgWlpsoE8UPgBQxpkPiHsFGMXPhfHi5kgL_6tFNFkiRGcCmoXNtrMU_TW9nx_IzmZhyVLqNUxVdVp3_LlXhmKZlhGwfybuX09Rp6Ey-eDwHnbo8q5gULEwcA"/>
+</div>
+<!-- Mobile App Mockup -->
+<div class="absolute -bottom-10 left-0 w-[260px] aspect-[9/19] bg-black rounded-[3rem] shadow-[0_40px_80px_rgba(0,0,0,0.8)] border-[10px] border-[#1a1a1a] z-20 overflow-hidden rotate-[-2deg]">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6edb355fX4PzCjJTLY6JKM4CwC5bFTGGEgrkc2IRXOkhhS01VA0cs-dvI2_f9vmb_A8it8Vmj23duePkJdUY0wus6T8BgG3dcZuZBSqFS49_htYqryNmzI_CZyM0CxYk4skJo0F-nfIayfmXkWuo7DSOsSbRHTSOt9u8Ta0W71FO3G7hTXxib-oNJeVGxMYUCjpIB9RqsO8sQGzLtyAOQ2GFAf3Symq4w4LTg603VD8HbKa3VLw3AFVBllDdVYvIx_UXbNzH-FQ"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Bar -->
+<section class="bg-surface-container-lowest/50 py-16 border-y border-outline-variant/10 relative reveal">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-12 text-center md:text-left">
+<div>
+<span class="text-primary font-headline font-extrabold text-5xl mb-2 block tracking-tighter">50+</span>
+<span class="text-on-surface-variant text-xs font-bold tracking-[0.2em] uppercase">Projects Delivered</span>
+</div>
+<div>
+<span class="text-primary font-headline font-extrabold text-5xl mb-2 block tracking-tighter">30+</span>
+<span class="text-on-surface-variant text-xs font-bold tracking-[0.2em] uppercase">Happy Clients</span>
+</div>
+<div>
+<span class="text-primary font-headline font-extrabold text-5xl mb-2 block tracking-tighter">5+</span>
+<span class="text-on-surface-variant text-xs font-bold tracking-[0.2em] uppercase">Years Experience</span>
+</div>
+<div>
+<span class="text-primary font-headline font-extrabold text-5xl mb-2 block tracking-tighter">4</span>
+<span class="text-on-surface-variant text-xs font-bold tracking-[0.2em] uppercase">Core Services</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-40 px-8 relative bg-surface-container-lowest reveal">
+<div class="max-w-7xl mx-auto">
+<div class="mb-24">
+<span class="text-primary font-headline font-bold text-xs tracking-[0.3em] uppercase mb-4 block">What We Master</span>
+<h2 class="font-headline font-extrabold text-5xl tracking-tight text-on-surface">Our Core Solutions</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Website Development -->
+<div class="group bg-surface-container rounded-3xl p-10 neon-border-hover">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">language</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">Website Development</h3>
+<p class="text-on-surface-variant mb-10 text-sm leading-relaxed font-light">High-converting marketing sites and complex enterprise portals built for speed.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform" href="#">
+                    Learn More <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Mobile Apps -->
+<div class="group bg-surface-container rounded-3xl p-10 neon-border-hover">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">smartphone</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">Mobile Apps</h3>
+<p class="text-on-surface-variant mb-10 text-sm leading-relaxed font-light">Native-feel iOS and Android applications with flawless user experiences.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform" href="#">
+                    Learn More <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+</div>
+<!-- Web Applications -->
+<div class="group bg-surface-container rounded-3xl p-10 neon-border-hover">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">terminal</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">Web Applications</h3>
+<p class="text-on-surface-variant mb-10 text-sm leading-relaxed font-light">Scalable SaaS products and internal tools designed for heavy-duty tasks.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform" href="#">
+                    Learn More <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+</div>
+<!-- POS Systems -->
+<div class="group bg-surface-container rounded-3xl p-10 neon-border-hover">
+<div class="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-10 group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl">point_of_sale</span>
+</div>
+<h3 class="font-headline font-bold text-2xl mb-4 text-on-surface">POS Systems</h3>
+<p class="text-on-surface-variant mb-10 text-sm leading-relaxed font-light">Custom retail and restaurant software integrated with cutting-edge hardware.</p>
+<a class="inline-flex items-center text-primary font-bold text-xs uppercase tracking-widest hover:translate-x-2 transition-transform" href="#">
+                    Learn More <span class="material-symbols-outlined ml-2 text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us -->
+<section class="py-40 bg-surface reveal">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+<div class="relative group">
+<div class="w-full aspect-[4/3] rounded-[2.5rem] overflow-hidden border border-outline-variant/10 p-2 bg-surface-container-low">
+<img class="w-full h-full object-cover rounded-[2rem] opacity-70 group-hover:opacity-100 transition-opacity duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBa_39cUSsSFzvveQ1w2gGJyHGrxbFHXtFYBznRGjRc81IHnsLBiYc7oVPdDm3VpqEsgQaSq49iKf-dUuEO91Ge7hcCCzutKg-Qquv4LpVxD1MsW1c1XQ6_LLY721I7Cd6gksOZS0SnCzlxR7GJEHtyLjfxmVgvL1_sHm_a9iS3ptj2pwNO0ZKc_WznR3k_7boFFM11L-LmGi9e4qQG-cyPYqWRVaoCHgEC-vcj9ofQwwRelmNmB80CHgBhg42hY6FpJrlzdrFTHw"/>
+</div>
+<div class="absolute -bottom-10 -right-10 bg-surface-container-highest/90 backdrop-blur-xl p-10 rounded-[2rem] border border-primary/30 shadow-2xl hidden md:block">
+<span class="text-primary font-headline font-black text-6xl block mb-2 tracking-tighter">98%</span>
+<p class="text-on-surface-variant font-bold text-xs uppercase tracking-widest">Client Satisfaction</p>
+</div>
+</div>
+<div>
+<span class="text-primary font-headline font-bold text-xs tracking-[0.3em] uppercase mb-6 block">The Neon Edge</span>
+<h2 class="font-headline font-extrabold text-5xl tracking-tight text-on-surface mb-12">Why Partners Choose Us</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-x-12 gap-y-12">
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl">bolt</span>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2 text-on-surface">Fast Delivery</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Agile sprints that move your project from concept to launch at warp speed.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl">psychology</span>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2 text-on-surface">Custom Solutions</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">No templates. Every line of code is written to solve your specific challenges.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl">support_agent</span>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2 text-on-surface">Ongoing Support</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">We're your long-term tech partner, providing maintenance and updates 24/7.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="material-symbols-outlined text-primary text-4xl">payments</span>
+<div>
+<h4 class="font-headline font-bold text-xl mb-2 text-on-surface">Affordable Pricing</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed font-light">Enterprise-grade solutions priced fairly for scaling startups and SMEs.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects -->
+<section class="py-40 px-8 bg-surface-container-lowest reveal">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+<div>
+<span class="text-primary font-headline font-bold text-xs tracking-[0.3em] uppercase mb-4 block">Portfolio</span>
+<h2 class="font-headline font-extrabold text-5xl tracking-tight text-on-surface">Featured Projects</h2>
+</div>
+<a class="text-primary font-headline font-bold text-xs uppercase tracking-widest border-b border-primary/30 hover:border-primary transition-all pb-2" href="#">View Full Case Studies</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group neon-border-hover rounded-[2rem] p-4 bg-surface-container-low">
+<div class="relative aspect-[4/5] rounded-2xl overflow-hidden mb-8">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfloxf7p0Lh5korOz0NEcjy_Mh5kLYjgfciaDsHnI-nOD6s0-DvbyU3LawnZwhaVHfAyc1frlSmAx6QrzBvNyTgP86aZalpcwIs5_ccW9YL-XVSp1ycDRvILf2T1Py4HCXYpr4PsXWV93fXI9sK4uE7NkGhynbHTSwjWuZZH_tF7lLbdQ13AgAi5dnhBmvm9FWBKr6RZ8blP6l2nVxCIVHfCDKwf4XootLnQEhR5RnwSPy4pr6axVdaQE8Mzg7s8SJ-VWWrmHBVA"/>
+<div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-white text-black font-bold px-8 py-3 rounded-full text-sm hover:scale-105 transition-transform">View Details</button>
+</div>
+</div>
+<div class="px-2">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 border border-primary/20 text-primary text-[9px] font-bold uppercase rounded tracking-widest">Web App</span>
+<span class="px-2 py-0.5 border border-primary/20 text-primary text-[9px] font-bold uppercase rounded tracking-widest">Next.js</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-3">Vortex E-Commerce</h3>
+<p class="text-on-surface-variant text-sm font-light">A headless commerce engine for high-volume retailers.</p>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group neon-border-hover rounded-[2rem] p-4 bg-surface-container-low">
+<div class="relative aspect-[4/5] rounded-2xl overflow-hidden mb-8">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT9siAxfGrIvQXUtHY8hR1d4vxAIXsseZFbMm8rGRQSaIKqKiwcF6cApV7OaRCeg1YsfdBFoR9X4FhH579UzfiVSNZuvn2qC4NvsLONXO3i816Aja0cTJY09gImzzAaOCtZrimtW6Fwo2FOvBJTD7EWa65FT2FG7qoPDK-UdcYS1AXWL276unvGfgkMiIdOUAyKKRSs6JWWwRgCkz2LliE6tHbY5kP1cXm3jTOZelkGVt5-cSBZq2QuNFnD4_5yuPMPAL5eaSAuw"/>
+<div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-white text-black font-bold px-8 py-3 rounded-full text-sm hover:scale-105 transition-transform">View Details</button>
+</div>
+</div>
+<div class="px-2">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 border border-primary/20 text-primary text-[9px] font-bold uppercase rounded tracking-widest">POS System</span>
+<span class="px-2 py-0.5 border border-primary/20 text-primary text-[9px] font-bold uppercase rounded tracking-widest">Electron</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-3">Luminary Retail</h3>
+<p class="text-on-surface-variant text-sm font-light">Cloud-integrated POS with real-time inventory tracking.</p>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group neon-border-hover rounded-[2rem] p-4 bg-surface-container-low">
+<div class="relative aspect-[4/5] rounded-2xl overflow-hidden mb-8">
+<img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxGG7dR7cPB58BGvKbHQM8GEzHqwNyqehXJDk_P5pf8Q78Y1BJYRTby1MuPMzIs7mMum9WTlzKvQBVcroazglwRIDy8dRYMPVRbQmPLcLxMnwbCuVZ9wctg5PDCBKjd2iF9THnbu32iA55i6vWpVee_rkIvZ_LPheJEtigbYZk6nRtNPitZY6eF-Dgc7FJjV30wZTnC8igzQqpHUinni8LSyKUz9jJOsm-_uIIkIjBlfHVO9rr328saV1qyPHIlDM3c7mdl5A3vw"/>
+<div class="absolute inset-0 bg-surface/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center backdrop-blur-sm">
+<button class="bg-white text-black font-bold px-8 py-3 rounded-full text-sm hover:scale-105 transition-transform">View Details</button>
+</div>
+</div>
+<div class="px-2">
+<div class="flex gap-2 mb-4">
+<span class="px-2 py-0.5 border border-primary/20 text-primary text-[9px] font-bold uppercase rounded tracking-widest">Mobile App</span>
+<span class="px-2 py-0.5 border border-primary/20 text-primary text-[9px] font-bold uppercase rounded tracking-widest">Flutter</span>
+</div>
+<h3 class="font-headline font-bold text-2xl text-on-surface mb-3">Zenith Health</h3>
+<p class="text-on-surface-variant text-sm font-light">Patient management app with automated appointment scheduling.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-40 px-8 reveal">
+<div class="max-w-7xl mx-auto text-center">
+<span class="text-primary font-headline font-bold text-xs tracking-[0.3em] uppercase mb-6 block">Kind Words</span>
+<h2 class="font-headline font-extrabold text-5xl tracking-tight text-on-surface mb-24">Trusted by Visionaries</h2>
+<div class="max-w-4xl mx-auto bg-surface-container rounded-[3rem] p-16 md:p-24 border border-outline-variant/10 relative neon-border-hover group">
+<div class="absolute -top-10 left-1/2 -translate-x-1/2 w-20 h-20 bg-primary rounded-full flex items-center justify-center shadow-[0_10px_40px_rgba(168,85,247,0.4)] group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-white text-4xl" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+</div>
+<div class="flex justify-center gap-1 mb-12 text-secondary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="text-2xl md:text-3xl text-on-surface mb-14 italic font-light leading-relaxed">
+                "NeonCurator transformed our manual warehouse operations into a streamlined digital powerhouse. Their team's technical depth is only matched by their commitment to our success."
+            </p>
+<div class="flex flex-col items-center">
+<div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary/40 p-1 mb-4">
+<img class="w-full h-full object-cover rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRDrsURVsmNi1JYIs_WotIPjcMJIGyaMZCmzEQUOsQKPpwrURXC0cIUduhXJILLv8-3mVSqcqgR9IohHeMhyl4E85AqzZ8j0iWWbCivBqlXAEhFb9ZWHTVgRkXjfN_MOzakpOsrsKl9dsQIjd8B6mKeSPmyck4Kr3f051u2rGtklqzBICdGQfQfr1u8PNxxhjC1XMutpsm8KPPD7jEQuiuNkQbGqzm8V1nueBx20i0y6pGeBlQqfswF0yFLQi8RzZbNzeZNBtzLw"/>
+</div>
+<div>
+<h5 class="font-headline font-bold text-lg text-on-surface">Marcus Thorne</h5>
+<p class="text-on-surface-variant text-xs uppercase tracking-widest font-bold mt-1">CEO, Thorne Logistics Global</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Banner -->
+<section class="py-32 px-8 reveal">
+<div class="max-w-7xl mx-auto relative group">
+<div class="absolute inset-0 bg-primary/20 blur-[120px] rounded-full group-hover:bg-primary/30 transition-all duration-1000"></div>
+<div class="bg-gradient-to-br from-[#1e0b3d] to-[#0a0118] rounded-[4rem] p-16 md:p-32 text-center relative border border-primary/20 overflow-hidden">
+<div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-primary via-transparent to-transparent"></div>
+<h2 class="font-headline font-extrabold text-5xl md:text-7xl tracking-tighter text-white mb-10 relative z-10 leading-[0.95]">
+                Ready to build <br class="hidden md:block"/> something great?
+            </h2>
+<p class="text-on-surface-variant text-xl mb-16 max-w-2xl mx-auto font-light relative z-10">
+                Let's turn your concept into a market-leading digital product. Your journey to digital dominance starts here.
+            </p>
+<button class="bg-primary text-white px-12 py-6 rounded-full font-headline font-extrabold text-xl hover:bg-primary-dim transition-all transform hover:scale-105 active:scale-95 shadow-[0_0_40px_rgba(168,85,247,0.4)] relative z-10">
+                Let's Talk
+            </button>
+</div>
+</div>
+</section>
+<!-- Footer (from Components v10) -->
+<footer class="w-full bottom-0 bg-[#180429] border-t border-violet-900/20 font-inter text-sm text-slate-400">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6">
+<div class="text-lg font-bold text-slate-50">PowerPluto Technologies</div>
+<div class="flex gap-8">
+<a class="text-slate-500 hover:text-slate-300 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-slate-300 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="text-slate-500 hover:text-slate-300 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Contact</a>
+<a class="text-slate-500 hover:text-slate-300 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-slate-300 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+</div>
+<div class="text-slate-500 text-xs">© 2024 PowerPluto Technologies. Digital Solutions Reimagined.</div>
+</div>
+</footer>
+<script>
+    // Scroll Reveal Implementation
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        observer.observe(el);
+    });
+</script>
+</body></html>

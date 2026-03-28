@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact | PowerPluto Technologies</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-error": "#490013",
+              "on-primary-fixed-variant": "#390083",
+              "surface-tint": "#bd9dff",
+              "secondary-container": "#612b8f",
+              "on-background": "#f3deff",
+              "error-dim": "#d73357",
+              "primary-fixed-dim": "#a67aff",
+              "outline-variant": "#543f66",
+              "on-secondary-fixed-variant": "#6b369a",
+              "on-surface-variant": "#bba1cf",
+              "primary-container": "#b28cff",
+              "on-primary-fixed": "#000000",
+              "error-container": "#a70138",
+              "tertiary-container": "#fe81a4",
+              "surface": "#180429",
+              "on-tertiary-fixed-variant": "#711036",
+              "primary": "#bd9dff",
+              "on-secondary": "#3b0065",
+              "on-secondary-container": "#e5c4ff",
+              "surface-bright": "#3c1d56",
+              "surface-container-low": "#1e0831",
+              "primary-fixed": "#b28cff",
+              "tertiary-fixed": "#ff8eac",
+              "surface-dim": "#180429",
+              "on-tertiary": "#6a0a31",
+              "inverse-surface": "#fff7fe",
+              "surface-container": "#250d3a",
+              "tertiary-dim": "#f17799",
+              "surface-container-highest": "#34184c",
+              "secondary-dim": "#be86ef",
+              "secondary-fixed-dim": "#ddb3ff",
+              "on-primary-container": "#2e006c",
+              "secondary-fixed": "#e6c5ff",
+              "tertiary-fixed-dim": "#f77c9e",
+              "tertiary": "#ff97b2",
+              "on-tertiary-container": "#5a0027",
+              "background": "#180429",
+              "primary-dim": "#8a4cfc",
+              "on-primary": "#3c0089",
+              "surface-container-high": "#2c1343",
+              "on-error-container": "#ffb2b9",
+              "inverse-primary": "#742fe5",
+              "on-tertiary-fixed": "#380016",
+              "error": "#ff6e84",
+              "inverse-on-surface": "#624c74",
+              "outline": "#846c96",
+              "on-secondary-fixed": "#4d137b",
+              "on-surface": "#f3deff",
+              "surface-variant": "#34184c",
+              "secondary": "#c38bf5",
+              "surface-container-lowest": "#000000"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glass-panel {
+            background: rgba(52, 24, 76, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .neon-glow-focus:focus {
+            box-shadow: 0 0 15px rgba(189, 157, 255, 0.4);
+            border-color: #bd9dff;
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary/30">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-[#34184c]/60 backdrop-blur-xl shadow-[inset_1px_1px_2px_rgba(189,157,255,0.1)]">
+<div class="flex items-center justify-between px-8 py-4 max-w-[1440px] mx-auto">
+<div class="text-xl font-extrabold tracking-tighter text-[#f3deff] font-headline">PowerPluto Technologies</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="#">Solutions</a>
+<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="#">Work</a>
+<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="#">About</a>
+<a class="font-headline font-bold tracking-tight text-[#f3deff]/70 hover:text-[#f3deff] transition-colors" href="#">Insights</a>
+</div>
+<button class="bg-gradient-to-br from-primary to-primary-dim px-6 py-2.5 rounded-full text-on-primary-fixed font-bold text-sm hover:scale-105 transition-transform active:scale-95">
+                Get a Quote
+            </button>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-6 md:px-12 max-w-[1440px] mx-auto">
+<div class="flex flex-col lg:flex-row gap-12 items-stretch min-h-[700px]">
+<!-- Left Column: Contact Details -->
+<div class="lg:w-[40%] rounded-xl overflow-hidden relative flex flex-col justify-between p-10 bg-gradient-to-br from-surface-container-high to-surface-container-lowest border border-outline-variant/10 shadow-2xl">
+<div class="absolute inset-0 opacity-10 pointer-events-none" data-alt="abstract tech pattern with geometric purple lines and dark violet gradients">
+<div class="w-full h-full bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-primary/20 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10">
+<span class="text-primary font-label text-xs font-bold tracking-widest uppercase mb-4 block">Get In Touch</span>
+<h1 class="font-headline text-5xl md:text-6xl font-extrabold tracking-tighter text-on-surface mb-8">Let's build the <span class="text-primary-container">Infinite</span> together.</h1>
+<div class="space-y-8 mt-12">
+<!-- Contact Item -->
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center border border-primary/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">mail</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider mb-1">Email Us</p>
+<p class="text-on-surface font-headline font-bold text-lg">drunkowltek@gmail.com</p>
+</div>
+</div>
+<!-- Contact Item -->
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center border border-primary/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">call</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider mb-1">Phone</p>
+<p class="text-on-surface font-headline font-bold text-lg">+91 00000 00000</p>
+</div>
+</div>
+<!-- Contact Item -->
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center border border-primary/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider mb-1">Studio Location</p>
+<p class="text-on-surface font-headline font-bold text-lg">India</p>
+</div>
+</div>
+<!-- Contact Item -->
+<div class="flex items-start gap-4 group cursor-default">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center border border-primary/20 group-hover:border-primary transition-colors">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">schedule</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-xs font-semibold uppercase tracking-wider mb-1">Working Hours</p>
+<p class="text-on-surface font-headline font-bold text-lg">Mon — Fri: 10:00 - 19:00<br/>Weekend: On-call for elite partners</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative z-10 pt-12">
+<button class="flex items-center gap-3 bg-[#25D366]/10 text-[#25D366] px-6 py-4 rounded-xl border border-[#25D366]/20 hover:bg-[#25D366]/20 transition-all group w-full justify-center">
+<span class="material-symbols-outlined">chat</span>
+<span class="font-bold">WhatsApp Quick Contact</span>
+</button>
+</div>
+</div>
+<!-- Right Column: Inquiry Form -->
+<div class="lg:w-[60%] bg-surface-container-low rounded-xl p-8 md:p-12 relative overflow-hidden border border-outline-variant/10 shadow-xl">
+<div class="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl pointer-events-none"></div>
+<h2 class="font-headline text-3xl font-bold mb-10 text-on-surface">Initiate Project</h2>
+
+<!-- Success / Error Toast -->
+<div id="formToast" class="hidden mb-6 px-5 py-4 rounded-xl text-sm font-semibold border"></div>
+
+<form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+<!-- Name -->
+<div class="space-y-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest ml-1">Full Name</label>
+<input id="inp_name" class="w-full bg-surface-container-lowest border-b border-outline-variant/40 p-4 text-on-surface focus:outline-none focus:border-primary neon-glow-focus transition-all placeholder:text-on-surface-variant/30 rounded-t-lg" placeholder="John Doe" type="text"/>
+</div>
+<!-- Email -->
+<div class="space-y-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest ml-1">Email Address</label>
+<input id="inp_email" class="w-full bg-surface-container-lowest border-b border-outline-variant/40 p-4 text-on-surface focus:outline-none focus:border-primary neon-glow-focus transition-all placeholder:text-on-surface-variant/30 rounded-t-lg" placeholder="john@example.com" type="email"/>
+</div>
+<!-- Phone -->
+<div class="space-y-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest ml-1">Phone Number</label>
+<input id="inp_phone" class="w-full bg-surface-container-lowest border-b border-outline-variant/40 p-4 text-on-surface focus:outline-none focus:border-primary neon-glow-focus transition-all placeholder:text-on-surface-variant/30 rounded-t-lg" placeholder="+91 00000 00000" type="tel"/>
+</div>
+<!-- Service Dropdown -->
+<div class="space-y-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest ml-1">Service Interested In</label>
+<select id="inp_service" class="w-full bg-surface-container-lowest border-b border-outline-variant/40 p-4 text-on-surface focus:outline-none focus:border-primary neon-glow-focus transition-all appearance-none rounded-t-lg">
+<option value="">Select a service...</option>
+<option value="Website Development">Website Development</option>
+<option value="Mobile App Development">Mobile App Development</option>
+<option value="Web Application">Web Application</option>
+<option value="POS System">POS System</option>
+<option value="Other">Other</option>
+</select>
+</div>
+<!-- Budget -->
+<div class="md:col-span-2 space-y-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest ml-1">Project Budget Range</label>
+<div class="flex flex-wrap gap-3 mt-2">
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio" value="$10k - $25k"/>
+<div class="px-6 py-3 rounded-full border border-outline-variant/20 bg-surface-container-lowest text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all font-bold text-sm">$10k - $25k</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio" value="$25k - $50k"/>
+<div class="px-6 py-3 rounded-full border border-outline-variant/20 bg-surface-container-lowest text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all font-bold text-sm">$25k - $50k</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio" value="$50k - $100k"/>
+<div class="px-6 py-3 rounded-full border border-outline-variant/20 bg-surface-container-lowest text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all font-bold text-sm">$50k - $100k</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio" value="$100k+"/>
+<div class="px-6 py-3 rounded-full border border-outline-variant/20 bg-surface-container-lowest text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all font-bold text-sm">$100k+</div>
+</label>
+<label class="cursor-pointer">
+<input class="hidden peer" name="budget" type="radio" value="Not sure"/>
+<div class="px-6 py-3 rounded-full border border-outline-variant/20 bg-surface-container-lowest text-on-surface-variant peer-checked:bg-primary-container peer-checked:text-on-primary-container peer-checked:border-primary transition-all font-bold text-sm">Not sure</div>
+</label>
+</div>
+</div>
+<!-- Message -->
+<div class="md:col-span-2 space-y-2">
+<label class="font-label text-xs font-bold text-on-surface-variant uppercase tracking-widest ml-1">Brief Project Description</label>
+<textarea id="inp_message" class="w-full bg-surface-container-lowest border-b border-outline-variant/40 p-4 text-on-surface focus:outline-none focus:border-primary neon-glow-focus transition-all placeholder:text-on-surface-variant/30 rounded-t-lg resize-none" placeholder="Tell us about your vision..." rows="4"></textarea>
+</div>
+<!-- Submit Button -->
+<div class="md:col-span-2 pt-6">
+<button id="submitBtn" class="w-full bg-gradient-to-r from-primary to-primary-dim p-5 rounded-xl text-on-primary-fixed font-black text-lg tracking-tight hover:shadow-[0_0_30px_rgba(189,157,255,0.4)] transition-all active:scale-[0.98]" type="submit">
+  Submit Request
+</button>
+</div>
+</form>
+
+<script>
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = document.getElementById('submitBtn');
+    const toast = document.getElementById('formToast');
+
+    const budget = document.querySelector('input[name="budget"]:checked');
+
+    const payload = {
+      name:    document.getElementById('inp_name').value.trim(),
+      email:   document.getElementById('inp_email').value.trim(),
+      phone:   document.getElementById('inp_phone').value.trim(),
+      service: document.getElementById('inp_service').value,
+      budget:  budget ? budget.value : 'Not sure',
+      message: document.getElementById('inp_message').value.trim()
+    };
+
+    if (!payload.name || !payload.email || !payload.service || !payload.message) {
+      showToast('Please fill in all required fields.', false);
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+
+    try {
+      const res = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+      const data = await res.json();
+
+      if (data.success) {
+        showToast('Thank you! We will get back to you within 24 hours.', true);
+        e.target.reset();
+      } else {
+        const msg = data.errors ? data.errors.map(e => e.msg).join(', ') : data.message;
+        showToast(msg, false);
+      }
+    } catch (err) {
+      showToast('Something went wrong. Please try again or email us directly.', false);
+    } finally {
+      btn.disabled = false;
+      btn.textContent = 'Submit Request';
+    }
+  });
+
+  function showToast(msg, success) {
+    const toast = document.getElementById('formToast');
+    toast.textContent = msg;
+    toast.className = success
+      ? 'mb-6 px-5 py-4 rounded-xl text-sm font-semibold border bg-green-900/30 text-green-400 border-green-700/40'
+      : 'mb-6 px-5 py-4 rounded-xl text-sm font-semibold border bg-red-900/30 text-red-400 border-red-700/40';
+    toast.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }
+</script>
+</div>
+</div>
+<!-- Styled Map Placeholder -->
+<div class="mt-24 relative rounded-2xl overflow-hidden h-[400px] border border-outline-variant/20 group">
+<div class="absolute inset-0 grayscale contrast-125 opacity-40 mix-blend-screen transition-all group-hover:opacity-60" data-alt="minimalist topographical digital map of Tokyo with neon violet accents and futuristic data overlays" data-location="Tokyo" style="">
+<img alt="Studio Location Map" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5X4K-RwAkjKehteHMLPTi64xz2T6iiAYLzxZXsmaMo1iCLNHKyuJRvTKBfdX71dfAD0HMZbMumqFXZXOBrMt5d0UYIDr3r5Hmk7bGIhErWwoYbpGd0FA89YEOV3tih9fwCIPdHV1o8WA-X5JACDQgE78QmGtCSHYDSVx3yrpsb6jRWvDPLsOH8viTt14eAv2DZ-MGrsuhkU3PIzc98TW7iGDEj5hD8ZBEeTE7hRrnjGqZFUlkovcz8gGeohNu2b44NjEle90Gcg"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="relative">
+<!-- Pulsing Location Marker -->
+<div class="absolute inset-0 bg-primary/40 rounded-full animate-ping"></div>
+<div class="relative w-12 h-12 bg-primary rounded-full flex items-center justify-center border-4 border-surface shadow-[0_0_20px_#bd9dff]">
+<span class="material-symbols-outlined text-surface text-2xl" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+<div class="ml-6 glass-panel p-4 rounded-xl border border-primary/30">
+<p class="font-headline font-bold text-on-surface">PowerPluto Technologies</p>
+<p class="text-xs text-on-surface-variant">India</p>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#180429] w-full py-12 px-8 border-t border-[#543f66]/20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between items-end w-full max-w-[1440px] mx-auto gap-8">
+<div class="space-y-6">
+<div class="text-lg font-black text-[#f3deff] font-headline">PowerPluto Technologies</div>
+<p class="text-[#f3deff]/50 font-body text-sm max-w-xs leading-relaxed">Crafting digital infinities for the brands that shape the future.</p>
+<div class="text-[#f3deff]/50 font-body text-sm">© 2024 PowerPluto Technologies. Built for the Infinite.</div>
+</div>
+<div class="flex flex-wrap gap-6 md:gap-12 lg:gap-16">
+<div class="space-y-4">
+<h4 class="text-primary font-bold text-xs uppercase tracking-widest">Connect</h4>
+<ul class="space-y-2">
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">LinkedIn</a></li>
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Twitter / X</a></li>
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Instagram</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-primary font-bold text-xs uppercase tracking-widest">Legal</h4>
+<ul class="space-y-2">
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Privacy Policy</a></li>
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Terms of Service</a></li>
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Cookie Settings</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="text-primary font-bold text-xs uppercase tracking-widest">Global</h4>
+<ul class="space-y-2">
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Global Offices</a></li>
+<li><a class="text-[#f3deff]/50 hover:text-[#bd9dff] text-sm hover:translate-x-1 transition-transform inline-block" href="#">Career Lab</a></li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
