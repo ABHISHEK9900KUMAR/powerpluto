@@ -105,24 +105,22 @@
       <span class="block w-5 h-0.5 bg-slate-300 transition-all duration-300" id="bar2"></span>
       <span class="block w-5 h-0.5 bg-slate-300 transition-all duration-300" id="bar3"></span>
     </button>
-    <a href="Homepage.html" class="text-xl font-black tracking-tighter text-violet-100 hover:text-violet-300 transition-colors">PowerPluto Technologies</a>
+    <a href="Homepage.html" class="text-xl font-black tracking-tighter text-slate-50 hover:text-violet-300 transition-colors">PowerPluto Technologies</a>
   </div>
-  <div class="hidden md:flex items-center gap-8">
-    <a class="text-slate-400 font-medium hover:text-violet-200 transition-colors" href="Homepage.html">Home</a>
-    <a class="text-slate-400 font-medium hover:text-violet-200 transition-colors" href="Services.html">Services</a>
-    <a class="text-violet-400 font-bold border-b-2 border-violet-500 pb-1" href="About.html">About</a>
-    <a class="text-slate-400 font-medium hover:text-violet-200 transition-colors" href="Portfolio.html">Work</a>
-    <a class="text-slate-400 font-medium hover:text-violet-200 transition-colors" href="contact.html">Contact</a>
+  <div class="hidden md:flex items-center gap-10">
+    <a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Homepage.html">Home</a>
+    <a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Services.html">Services</a>
+    <a class="font-headline uppercase tracking-widest text-[10px] font-bold text-slate-400 hover:text-slate-200 transition-all" href="Portfolio.html">Portfolio</a>
+    <a class="font-headline uppercase tracking-widest text-[10px] font-bold text-violet-400 border-b-2 border-violet-500 pb-1" href="About.html">About</a>
   </div>
-  <a href="contact.html" class="hidden md:block"><button class="neon-gradient text-on-primary-fixed font-bold px-6 py-2.5 rounded-full text-sm hover:scale-105 transition-transform">Start a Project</button></a>
+  <a href="contact.html" class="hidden md:block"><button class="bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold px-5 py-2.5 rounded-full text-sm hover:scale-105 transition-transform shadow-lg shadow-violet-900/30">Get a Quote</button></a>
 </nav>
 <div id="mobileMenu" class="hidden md:hidden bg-[#180429]/95 backdrop-blur-xl border-t border-white/5 px-6 py-6 flex flex-col gap-4">
   <a href="Homepage.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Home</a>
   <a href="Services.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Services</a>
+  <a href="Portfolio.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Portfolio</a>
   <a href="About.html" class="font-bold text-sm text-violet-400">About</a>
-  <a href="Portfolio.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Work</a>
-  <a href="contact.html" class="font-bold text-sm text-slate-300 hover:text-white transition-colors">Contact</a>
-  <a href="contact.html"><button class="w-full bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold py-3 rounded-xl text-sm mt-2">Start a Project</button></a>
+  <a href="contact.html"><button class="w-full bg-gradient-to-br from-violet-600 to-violet-800 text-white font-bold py-3 rounded-xl text-sm mt-2">Get a Quote</button></a>
 </div>
 <script>
   function toggleMenu() {
@@ -334,19 +332,23 @@
 </div>
 </section>
 </main>
+<!-- Floating Chat Button -->
+<a class="fixed bottom-8 right-8 z-[60] w-14 h-14 bg-[#bd9dff] text-on-primary-fixed rounded-full flex items-center justify-center shadow-[0_0_20px_rgba(189,157,255,0.4)] hover:scale-110 transition-transform group" href="#">
+<span class="material-symbols-outlined text-3xl font-bold">chat_bubble</span>
+<span class="absolute right-16 bg-surface-container border border-primary/20 text-primary px-3 py-1 rounded-lg text-xs font-bold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none uppercase tracking-widest">Chat with us</span>
+</a>
 <!-- Footer -->
-<footer class="w-full py-20 mt-auto bg-[#180429] border-t border-violet-900/20">
-<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-8">
-<div class="flex flex-col items-center md:items-start gap-4">
-<div class="text-lg font-bold text-violet-400 font-headline">PowerPluto Technologies</div>
-<p class="font-inter text-sm tracking-wide text-slate-500">© 2024 PowerPluto Technologies. Precision in Motion.</p>
-</div>
+<footer class="w-full bg-[#180429] border-t border-violet-900/20 font-body text-sm text-slate-400">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center px-8 py-12 gap-6">
+<div class="text-lg font-bold text-slate-50">PowerPluto Technologies</div>
 <div class="flex gap-8">
-<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="#">Privacy Policy</a>
-<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="#">Terms</a>
-<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="#">Careers</a>
-<a class="text-slate-500 text-sm hover:text-violet-300 transition-all opacity-80 hover:opacity-100" href="contact.html">Contact</a>
+<a class="text-slate-500 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Privacy</a>
+<a class="text-slate-500 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Terms</a>
+<a class="text-slate-500 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="contact.html">Contact</a>
+<a class="text-slate-500 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">Twitter</a>
+<a class="text-slate-500 hover:text-violet-400 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
 </div>
+<div class="text-slate-500 text-xs">© 2024 PowerPluto Technologies. Digital Solutions Reimagined.</div>
 </div>
 </footer>
 </body></html>
